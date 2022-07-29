@@ -10,7 +10,7 @@ const cluster = require('cluster')
 
 class Server {
   constructor(){
-    this.PORT = argv.p || 8080;
+    //this.PORT = argv.p || 8080;
     this.app = express();
     this.root = '/'
     this.path = require('path')
