@@ -54,9 +54,9 @@ class Server {
 
   
   listen(){
-    const host = process.env.HOST || '0.0.0.0'
+    //const host = process.env.HOST || '0.0.0.0'
     const port = process.env.PORT || 8080
-    this.app.listen(port, host, () => {
+    this.app.listen(port, () => {
       console.log(`Server Up on port ${port}`)
     })
   }
