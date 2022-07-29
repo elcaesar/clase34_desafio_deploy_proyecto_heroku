@@ -7,15 +7,9 @@
 "start" : "node app.js"
 ```
 
-* se define en el archivo de variables globales (por ejemplo `.env`)
-    -- DB_CONN = la cadena de conexión a la base de datos
-    -- HOST = `localhost`
-luego usar esas variables para poner el servidor en escucha.
-
-No se define el puerto ya que Heroku lo asigna automáticamente, se puede definir así:
+* Heroku asigna automáticamente un puerto que tenga disponible por lo que si se definió a nivel un número de puerto, se debe borrar y definir:
 ```
 const port = process.env.PORT || 8080
 ```
-
 
 
